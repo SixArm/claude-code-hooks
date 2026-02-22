@@ -1,6 +1,4 @@
-# PreToolUse
-
-## Example: Block edits to protected files
+# Protect files
 
 Prevent Claude from modifying sensitive files like `.env`, `package-lock.json`,
 or anything in `.git/`.

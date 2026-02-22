@@ -1,6 +1,4 @@
-# SessionEnd
-
-## Example: Clear temporary files
+# Clear scratch files
 
 The `SessionEnd` event supports matchers on the reason the session ended. This
 hook only fires on `clear` (when you run `/clear`), not on normal exits.

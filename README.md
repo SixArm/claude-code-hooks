@@ -4,7 +4,7 @@ Claude Code hooks as example that you can use and alter as you wish.
 
 <https://code.claude.com/docs/en/hooks-guide>
 
-Start Claude code and enter `/hooks` like this:
+Start Claude code then enter `/hooks` like this:
 
 ```sh
 ➜ claude
@@ -14,11 +14,10 @@ Start Claude code and enter `/hooks` like this:
   ▘▘ ▝▝
 
 ❯ /hooks
-─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+───────────────────────────────────────────────────────────────────────────────────────
  Hooks
- 5 hooks
 
- ❯ 1.  PreToolUse - Before tool execution
+   1.  PreToolUse - Before tool execution
    2.  PostToolUse - After tool execution
    3.  PostToolUseFailure - After tool execution fails
    4.  Notification - When notifications are sent
@@ -35,15 +34,3 @@ Start Claude code and enter `/hooks` like this:
    15. TaskCompleted - When a task is being marked as completed
    16. Disable all hooks
 ```
-
-## Limitations and troubleshooting
-
-Hooks communicate through stdout, stderr, and exit codes only. They cannot trigger slash commands or tool calls directly.
-
-Hook timeout is 10 minutes by default, configurable per hook with the timeout field (in seconds).
-
-`PostToolUse` hooks cannot undo actions since the tool has already executed.
-
-`PermissionRequest` hooks do not fire in non-interactive mode (-p); instead, use `PreToolUse` hooks for automated permission decisions.
-
-`Stop` hooks fire whenever Claude finishes responding, not only at task completion. They do not fire on user interrupts.

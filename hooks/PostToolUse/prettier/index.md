@@ -1,6 +1,4 @@
-# PostToolUse
-
-## Example: Auto-format code after edits
+# Prettier
 
 Automatically run Prettier on every file Claude edits, so formatting stays
 consistent without manual intervention.

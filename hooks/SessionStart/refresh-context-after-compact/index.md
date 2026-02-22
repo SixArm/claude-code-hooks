@@ -1,6 +1,4 @@
-# SessionStart
-
-## Example: Re-inject context after compaction
+# Refresh context after compact
 
 When Claude’s context window fills up, compaction summarizes the conversation to
 free space. This can lose important details. Use a `SessionStart` hook with a

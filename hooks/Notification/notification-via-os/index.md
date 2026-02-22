@@ -1,9 +1,8 @@
-# Notification
+# Notification via OS
 
-## Example: Get notified when Claude needs input.
-
-Get a desktop notification whenever Claude finishes working and needs your
-input, so you can switch to other tasks without checking the terminal.
+Get an operating system desktop notification whenever Claude finishes working
+and needs your input, so you can switch to other tasks without checking the
+terminal.
 
 This hook uses the `Notification` event, which fires when Claude is waiting for
 input or permission. Each tab below uses the platform’s native notification
