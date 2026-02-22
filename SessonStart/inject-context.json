@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Reminders: Use tool A, not B. Run C before doing D. Current phase is E.'"
+          }
+        ]
+      }
+    ]
+  }
+}
